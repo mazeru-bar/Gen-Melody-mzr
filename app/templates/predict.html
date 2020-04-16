@@ -5,16 +5,15 @@
 		<!-- cssの読み込み -->
 		<link rel="stylesheet" type="text/css" href="{{ staticfile('style.css') }}">
 	</head>
-	<body>
-		<!-- jsの読み込み -->
-    <!-- <script src="static/js/script.js"></script> -->
 
-    <div class="top_title">Uploadされた画像のクラス分類</div>
-		<p>予測結果のTOP5を表示します</p>
+	<body>
+
+    <div class="top_title">画像から音楽を生成</div>
+		<p>画像の輝度値に応じたメロディを生成し、メロディに応じた和音進行を生成します</p>
 
 		<ui>
-			<li>モデルはMobileNetを使用</li>
-			<li>学習データはImageNetを使用</li>
+			<li>画像のHSV値におけるV値のみを利用します</li>
+			<li>メロディから和音進行を生成するモデルの重みはまだ学習途中です</li>
 			<li>Uploadするファイルはpng, jpg, jpegのみ対応（上限1MB）</li>
 		</ui>
 

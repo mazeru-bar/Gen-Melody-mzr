@@ -11,21 +11,9 @@
 		<!-- jsの読み込み -->
 		<!-- <script src="static/js/script.js"></script> -->
 
-		<div class="top_title">Uploadされた画像のクラス分類</div>
-		<p>予測結果 TOP5</p>
-
-		<table border="5" frame="void" rules="rows" cellpadding="8">
-			<tr>
-			<td><b>class</b></td>
-			<td><b>result [%]</b></td>
-			</tr>
-			{% for result in results %}
-			<tr>
-			<td>{{result[0]}}</td>
-			<td>{{result[1]}}</td>
-			</tr>
-			{% endfor %}
-		</table>
+		<div class="top_title">画像から音楽を生成</div>
+		<p>{{pred_argmax}}</p>
+		<p>midiファイルがuploadされました</p>
 
 
 		<input type="button" value="Top Page" onClick="location.href='./predict'">
