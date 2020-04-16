@@ -1,9 +1,8 @@
-﻿# MobileNet-Flask-test
+﻿# Generating MIDI based on image
 
-Flaskの勉強のために作成しました。アップロードした画像の予測をMobileNetのモデルによって行います。
+※未完成です。
+アップロードした画像に応じたmidiファイルを生成します
 
-実装ページ : https://load-predict-mzr.herokuapp.com/predict
-（画像のアップロードには数秒かかります。またアップロードされた画像は自動的にサーバから削除されます。）
 
 # Usage
 
@@ -14,4 +13,3 @@ python run.py
 # Author
 
 mazeru-bar(mazerubar@gmail.com)
-
